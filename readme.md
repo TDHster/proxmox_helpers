@@ -34,7 +34,7 @@ chmod +x resource_usage.sh
 ## Example Output
 
 ```
-Start counting...
+Start counting resources of running virtual machines...
 Memory used by VMs: 16.50GB of 32.00GB available.
 Cores used by VMs: 8 of 12 available.
 ```
