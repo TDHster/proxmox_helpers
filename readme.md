@@ -21,7 +21,11 @@ This script provides a convenient way to monitor and display resource usage (mem
 ## Usage
 
 1. Clone the repository or copy the script to your Proxmox VE server.
-2. Run the script to view the resource usage information.
+2. Give executable rights if needed
+```bash
+chmod +x resource_usage.sh
+```
+3. Run the script to view the resource usage information.
 
 ```bash
 ./resource_usage.sh
