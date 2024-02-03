@@ -1,5 +1,9 @@
 #!/bin/bash
 
+qm list | grep -v stopped
+
+echo
+
 total_memory=0
 total_cores=0
 
