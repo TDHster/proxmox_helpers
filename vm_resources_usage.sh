@@ -20,7 +20,8 @@ for vmid in $(qm list | grep -v stopped | awk '$1 ~ /^[0-9]+$/ {print $1}'); do
 done
 
 total_memory_gb=$(printf "%.2f" $(echo "$total_memory/1024" | bc -l))
+free_memory_gb=$(printf "%.2f" $(echo "$all_available_memory_gb - $total_memory_gb" | bc -l))
 
 echo
-echo "Memory used by VMs: ${total_memory_gb}GB of ${all_available_memory_gb}GB"
-echo "Cores used by VMs: $total_cores of $all_available_cores available."
+echo "Memory used by VMs: ${total_memory_gb}GB of ${all_available_memory_gb}GB available. (Free ${free_memory_gb}GB)"
+echo "Cores used by VMs: $total_cores of $all_available_cores available. (Free $(($all_available_cores - $total_cores)) cores)"
