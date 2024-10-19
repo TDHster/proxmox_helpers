@@ -38,6 +38,7 @@ Start counting resources of running virtual machines...
 Memory used by VMs: 16.50GB of 32.00GB available.
 Cores used by VMs: 8 of 12 available.
 ```
+<img width="567" alt="Screenshot" src="https://github.com/user-attachments/assets/c52e9871-0a92-4ba0-890f-35146de8c00a">
 
 Feel free to use and customize this script to suit your specific needs!
 
